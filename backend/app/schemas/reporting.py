@@ -6,15 +6,15 @@ class RevenueStatus(str,Enum): SANDBOX_VERIFIED="SANDBOX_VERIFIED"; SIMULATED_NO
 class OverviewResponse(BaseModel):
     source_scope:SourceScope; revenue_status:RevenueStatus; total_recovery_cases:int=Field(ge=0); eligible_cases:int=Field(ge=0); assessed_cases:int=Field(ge=0); payment_links_created:int=Field(ge=0); verified_attributions:int=Field(ge=0); recovered_revenue_minor_units:int=Field(ge=0); active_cases:int=Field(ge=0); closed_cases:int=Field(ge=0)
 class PaginationMetadata(BaseModel): limit:int=Field(ge=1,le=100); offset:int=Field(ge=0)
-class RecoveryCaseSummary(BaseModel): case_id:str; status:str; amount_minor_units:int=Field(ge=0); currency:str; eligibility_result:str; source_scope:SourceScope
+class RecoveryCaseSummary(BaseModel): case_id:str; status:str; amount_minor_units:int=Field(ge=0); currency:str; eligibility_result:str; source_scope:SourceScope; recovery_probability:object|None=None; diagnosis:str|None=None; candidate_action:str|None=None; policy_decision:str|None=None; created_at:object|None=None
 class RecoveryListResponse(BaseModel): items:list[RecoveryCaseSummary]; pagination:PaginationMetadata
-class RecoveryCaseDetail(BaseModel): recovery_case:dict; assessments:list[dict]; ai_advisories:list[dict]; executions:list[dict]; attributions:list[dict]
+class RecoveryCaseDetail(BaseModel): recovery_case:dict; assessments:list[dict]; ai_advisories:list[dict]; policy_decisions:list[dict]=[]; executions:list[dict]; attributions:list[dict]
 class EvaluationRunSummary(BaseModel): run_id:str; run_name:str; dataset_id:str; dataset_version:str; run_type:str; status:str
 class EvaluationRunListResponse(BaseModel): items:list[EvaluationRunSummary]
 class EvaluationDetail(BaseModel): run_id:str; dataset_id:str; dataset_version:str; source_scope:str; configuration:dict; metrics:dict|None
 class EvaluationMetricsResponse(BaseModel): model_config={"extra":"allow"}
 class AIReportingResponse(BaseModel): total_advisories:int=Field(ge=0); completed:int=Field(ge=0); uncertain:int=Field(ge=0); unavailable:int=Field(ge=0)
-class PolicyReportingResponse(BaseModel): approval_count:int=Field(ge=0); denial_count:int=Field(ge=0); escalation_count:int=Field(ge=0); denominator:int=Field(ge=0)
+class PolicyReportingResponse(BaseModel): approval_count:int=Field(ge=0); denial_count:int=Field(ge=0); escalation_count:int=Field(ge=0); denominator:int=Field(ge=0); reason_code_counts:dict[str,int]={}
 class ExecutionReportingResponse(BaseModel): execution_request_count:int=Field(ge=0); payment_link_created_count:int=Field(ge=0); awaiting_payment_count:int=Field(ge=0); reconciling_count:int=Field(ge=0); failed_count:int=Field(ge=0); blocked_count:int=Field(ge=0)
-class AuditRecordResponse(BaseModel): action:str; entity_type:str; entity_id:str|None; created_at:object
+class AuditRecordResponse(BaseModel): action:str; entity_type:str; entity_id:str|None; created_at:object; actor:str|None=None; metadata:dict|None=None
 class AuditListResponse(BaseModel): items:list[AuditRecordResponse]; pagination:PaginationMetadata

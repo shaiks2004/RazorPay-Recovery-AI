@@ -7,6 +7,7 @@ from fastapi.responses import JSONResponse
 
 from app.api.webhooks import router as webhooks_router
 from app.api.reporting import router as reporting_router
+from app.api.demo_data import router as demo_data_router
 from app.config import Settings
 from app.db.database import create_database_engine, create_session_factory, database_healthy
 from app.services.webhook_ingress import WebhookIngressService
@@ -25,6 +26,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.state.webhook_ingress_service = WebhookIngressService(session_factory, runtime_settings.merchant_id)
     app.include_router(webhooks_router)
     app.include_router(reporting_router)
+    app.include_router(demo_data_router)
 
     @app.get("/health")
     def health() -> dict[str, str]:
