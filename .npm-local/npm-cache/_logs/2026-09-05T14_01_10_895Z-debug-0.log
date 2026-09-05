@@ -1,0 +1,34 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v22.13.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Projects\razorpay-recover\.npmrc
+5 silly config load:file:C:\Projects\razorpay-recover\.npm-appdata\npm\etc\npmrc
+6 verbose title npm create vite@latest frontend --template react-ts
+7 verbose argv "create" "vite@latest" "frontend" "--" "--template" "react-ts"
+8 verbose logfile logs-max:10 dir:C:\Projects\razorpay-recover\.npm-local\npm-cache\_logs\2026-09-05T14_01_10_895Z-
+9 verbose logfile C:\Projects\razorpay-recover\.npm-local\npm-cache\_logs\2026-09-05T14_01_10_895Z-debug-0.log
+10 silly logfile done cleaning log files
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 http fetch GET 200 https://registry.npmjs.org/create-vite 282ms (cache miss)
+13 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+14 warn exec The following package was not found and will be installed: create-vite@9.2.0
+15 silly idealTree buildDeps
+16 silly fetch manifest create-vite@9.2.0
+17 silly packumentCache full:https://registry.npmjs.org/create-vite cache-miss
+18 http fetch GET 200 https://registry.npmjs.org/create-vite 57ms (cache miss)
+19 silly packumentCache full:https://registry.npmjs.org/create-vite set size:undefined disposed:false
+20 silly placeDep ROOT create-vite@9.2.0 OK for:  want: 9.2.0
+21 silly reify moves {}
+22 silly audit bulk request { 'create-vite': [ '9.2.0' ] }
+23 http cache create-vite@https://registry.npmjs.org/create-vite/-/create-vite-9.2.0.tgz 0ms (cache hit)
+24 silly tarball no local data for create-vite@https://registry.npmjs.org/create-vite/-/create-vite-9.2.0.tgz. Extracting by manifest.
+25 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 265ms
+26 silly audit report {}
+27 http fetch GET 200 https://registry.npmjs.org/create-vite/-/create-vite-9.2.0.tgz 767ms (cache miss)
+28 verbose cwd C:\Projects\razorpay-recover
+29 verbose os Windows_NT 10.0.19045
+30 verbose node v22.13.0
+31 verbose npm  v10.9.2
+32 verbose exit 0
+33 info ok

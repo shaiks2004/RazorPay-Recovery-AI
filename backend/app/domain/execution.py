@@ -1,0 +1,10 @@
+from enum import StrEnum
+
+
+class ExecutionStatus(StrEnum):
+    REQUESTED = "REQUESTED"
+    EXECUTING = "EXECUTING"
+    AWAITING_PAYMENT = "AWAITING_PAYMENT"
+    RECONCILING = "RECONCILING"
+    FAILED = "FAILED"
+    BLOCKED = "BLOCKED"

@@ -1,0 +1,2 @@
+"""RECOVER backend application."""
+

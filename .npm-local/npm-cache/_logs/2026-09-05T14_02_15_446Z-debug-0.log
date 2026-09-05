@@ -1,0 +1,364 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v22.13.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Projects\razorpay-recover\frontend\.npmrc
+5 silly config load:file:C:\Projects\razorpay-recover\.npmrc
+6 silly config load:file:C:\Projects\razorpay-recover\.npm-appdata\npm\etc\npmrc
+7 verbose title npm install react-router-dom
+8 verbose argv "install" "react-router-dom"
+9 verbose logfile logs-max:10 dir:C:\Projects\razorpay-recover\.npm-local\npm-cache\_logs\2026-09-05T14_02_15_446Z-
+10 verbose logfile C:\Projects\razorpay-recover\.npm-local\npm-cache\_logs\2026-09-05T14_02_15_446Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 silly fetch manifest react-router-dom@*
+15 silly packumentCache full:https://registry.npmjs.org/react-router-dom cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/react-router-dom 369ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/react-router-dom set size:undefined disposed:false
+18 silly fetch manifest react@^19.2.8
+19 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+20 http cache https://registry.npmjs.org/react 44ms (cache hit)
+21 silly packumentCache full:https://registry.npmjs.org/react set size:6951203 disposed:false
+22 silly fetch manifest react-dom@^19.2.8
+23 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+24 http cache https://registry.npmjs.org/react-dom 241ms (cache hit)
+25 silly packumentCache full:https://registry.npmjs.org/react-dom set size:9352158 disposed:false
+26 silly placeDep ROOT react-router-dom@7.18.3 OK for: frontend@0.0.0 want: *
+27 silly fetch manifest react-router@7.18.3
+28 silly packumentCache full:https://registry.npmjs.org/react-router cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/react-router 145ms (cache miss)
+30 silly packumentCache full:https://registry.npmjs.org/react-router set size:undefined disposed:false
+31 silly fetch manifest react@>=18
+32 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+33 http cache https://registry.npmjs.org/react 33ms (cache hit)
+34 silly packumentCache full:https://registry.npmjs.org/react set size:6951203 disposed:false
+35 silly fetch manifest react-dom@>=18
+36 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+37 http cache https://registry.npmjs.org/react-dom 36ms (cache hit)
+38 silly packumentCache full:https://registry.npmjs.org/react-dom set size:9352158 disposed:false
+39 silly placeDep ROOT react-router@7.18.3 OK for: react-router-dom@7.18.3 want: 7.18.3
+40 silly fetch manifest cookie@^1.0.1
+41 silly packumentCache full:https://registry.npmjs.org/cookie cache-miss
+42 silly fetch manifest set-cookie-parser@^2.6.0
+43 silly packumentCache full:https://registry.npmjs.org/set-cookie-parser cache-miss
+44 http fetch GET 200 https://registry.npmjs.org/cookie 63ms (cache miss)
+45 silly packumentCache full:https://registry.npmjs.org/cookie set size:undefined disposed:false
+46 http fetch GET 200 https://registry.npmjs.org/set-cookie-parser 140ms (cache miss)
+47 silly packumentCache full:https://registry.npmjs.org/set-cookie-parser set size:undefined disposed:false
+48 silly placeDep ROOT cookie@1.1.1 OK for: react-router@7.18.3 want: ^1.0.1
+49 silly placeDep ROOT set-cookie-parser@2.7.2 OK for: react-router@7.18.3 want: ^2.6.0
+50 silly reify moves {}
+51 silly audit bulk request {
+51 silly audit   '@oxc-project/types': [ '0.148.0' ],
+51 silly audit   '@oxlint/binding-android-arm-eabi': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-android-arm64': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-darwin-arm64': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-darwin-x64': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-freebsd-x64': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-linux-arm-gnueabihf': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-linux-arm-musleabihf': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-linux-arm64-gnu': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-linux-arm64-musl': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-linux-ppc64-gnu': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-linux-riscv64-gnu': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-linux-riscv64-musl': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-linux-s390x-gnu': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-linux-x64-gnu': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-linux-x64-musl': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-openharmony-arm64': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-win32-arm64-msvc': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-win32-ia32-msvc': [ '1.81.0' ],
+51 silly audit   '@oxlint/binding-win32-x64-msvc': [ '1.81.0' ],
+51 silly audit   '@rolldown/binding-android-arm-eabi': [ '1.2.7' ],
+51 silly audit   '@rolldown/binding-android-arm64': [ '1.2.7' ],
+51 silly audit   '@rolldown/binding-darwin-arm64': [ '1.2.7' ],
+51 silly audit   '@rolldown/binding-darwin-x64': [ '1.2.7' ],
+51 silly audit   '@rolldown/binding-freebsd-x64': [ '1.2.7' ],
+51 silly audit   '@rolldown/binding-linux-arm-gnueabihf': [ '1.2.7' ],
+51 silly audit   '@rolldown/binding-linux-arm64-gnu': [ '1.2.7' ],
+51 silly audit   '@rolldown/binding-linux-arm64-musl': [ '1.2.7' ],
+51 silly audit   '@rolldown/binding-linux-ppc64-gnu': [ '1.2.7' ],
+51 silly audit   '@rolldown/binding-linux-s390x-gnu': [ '1.2.7' ],
+51 silly audit   '@rolldown/binding-linux-x64-gnu': [ '1.2.7' ],
+51 silly audit   '@rolldown/binding-linux-x64-musl': [ '1.2.7' ],
+51 silly audit   '@rolldown/binding-openharmony-arm64': [ '1.2.7' ],
+51 silly audit   '@rolldown/binding-win32-arm64-msvc': [ '1.2.7' ],
+51 silly audit   '@rolldown/binding-win32-x64-msvc': [ '1.2.7' ],
+51 silly audit   '@rolldown/pluginutils': [ '1.0.1' ],
+51 silly audit   '@types/node': [ '24.13.3' ],
+51 silly audit   '@types/react': [ '19.2.18' ],
+51 silly audit   '@types/react-dom': [ '19.2.7' ],
+51 silly audit   '@vitejs/plugin-react': [ '6.1.1' ],
+51 silly audit   csstype: [ '3.2.3' ],
+51 silly audit   'detect-libc': [ '2.1.2' ],
+51 silly audit   fdir: [ '6.5.0' ],
+51 silly audit   fsevents: [ '2.3.3' ],
+51 silly audit   lightningcss: [ '1.33.0' ],
+51 silly audit   'lightningcss-android-arm64': [ '1.33.0' ],
+51 silly audit   'lightningcss-darwin-arm64': [ '1.33.0' ],
+51 silly audit   'lightningcss-darwin-x64': [ '1.33.0' ],
+51 silly audit   'lightningcss-freebsd-x64': [ '1.33.0' ],
+51 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.33.0' ],
+51 silly audit   'lightningcss-linux-arm64-gnu': [ '1.33.0' ],
+51 silly audit   'lightningcss-linux-arm64-musl': [ '1.33.0' ],
+51 silly audit   'lightningcss-linux-x64-gnu': [ '1.33.0' ],
+51 silly audit   'lightningcss-linux-x64-musl': [ '1.33.0' ],
+51 silly audit   'lightningcss-win32-arm64-msvc': [ '1.33.0' ],
+51 silly audit   'lightningcss-win32-x64-msvc': [ '1.33.0' ],
+51 silly audit   nanoid: [ '3.3.18' ],
+51 silly audit   oxlint: [ '1.81.0' ],
+51 silly audit   picocolors: [ '1.1.1' ],
+51 silly audit   picomatch: [ '4.0.7' ],
+51 silly audit   postcss: [ '8.5.28' ],
+51 silly audit   react: [ '19.2.8' ],
+51 silly audit   'react-dom': [ '19.2.8' ],
+51 silly audit   rolldown: [ '1.2.7' ],
+51 silly audit   scheduler: [ '0.27.0' ],
+51 silly audit   'source-map-js': [ '1.2.1' ],
+51 silly audit   tinyglobby: [ '0.2.17' ],
+51 silly audit   typescript: [ '6.0.3' ],
+51 silly audit   'undici-types': [ '7.18.2' ],
+51 silly audit   vite: [ '8.2.2' ],
+51 silly audit   'react-router-dom': [ '7.18.3' ],
+51 silly audit   'react-router': [ '7.18.3' ],
+51 silly audit   cookie: [ '1.1.1' ],
+51 silly audit   'set-cookie-parser': [ '2.7.2' ]
+51 silly audit }
+52 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\lightningcss-win32-arm64-msvc
+53 silly reify mark deleted [
+53 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\lightningcss-win32-arm64-msvc'
+53 silly reify ]
+54 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\lightningcss-linux-x64-musl
+55 silly reify mark deleted [
+55 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\lightningcss-linux-x64-musl'
+55 silly reify ]
+56 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\lightningcss-linux-x64-gnu
+57 silly reify mark deleted [
+57 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\lightningcss-linux-x64-gnu'
+57 silly reify ]
+58 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\lightningcss-linux-arm64-musl
+59 silly reify mark deleted [
+59 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\lightningcss-linux-arm64-musl'
+59 silly reify ]
+60 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\lightningcss-linux-arm64-gnu
+61 silly reify mark deleted [
+61 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\lightningcss-linux-arm64-gnu'
+61 silly reify ]
+62 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\lightningcss-linux-arm-gnueabihf
+63 silly reify mark deleted [
+63 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\lightningcss-linux-arm-gnueabihf'
+63 silly reify ]
+64 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\lightningcss-freebsd-x64
+65 silly reify mark deleted [
+65 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\lightningcss-freebsd-x64'
+65 silly reify ]
+66 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\lightningcss-darwin-x64
+67 silly reify mark deleted [
+67 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\lightningcss-darwin-x64'
+67 silly reify ]
+68 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\lightningcss-darwin-arm64
+69 silly reify mark deleted [
+69 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\lightningcss-darwin-arm64'
+69 silly reify ]
+70 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\lightningcss-android-arm64
+71 silly reify mark deleted [
+71 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\lightningcss-android-arm64'
+71 silly reify ]
+72 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\fsevents
+73 silly reify mark deleted [ 'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\fsevents' ]
+74 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@rolldown\binding-win32-arm64-msvc
+75 silly reify mark deleted [
+75 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@rolldown\\binding-win32-arm64-msvc'
+75 silly reify ]
+76 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@rolldown\binding-openharmony-arm64
+77 silly reify mark deleted [
+77 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@rolldown\\binding-openharmony-arm64'
+77 silly reify ]
+78 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@rolldown\binding-linux-x64-musl
+79 silly reify mark deleted [
+79 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@rolldown\\binding-linux-x64-musl'
+79 silly reify ]
+80 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@rolldown\binding-linux-x64-gnu
+81 silly reify mark deleted [
+81 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@rolldown\\binding-linux-x64-gnu'
+81 silly reify ]
+82 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@rolldown\binding-linux-s390x-gnu
+83 silly reify mark deleted [
+83 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@rolldown\\binding-linux-s390x-gnu'
+83 silly reify ]
+84 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@rolldown\binding-linux-ppc64-gnu
+85 silly reify mark deleted [
+85 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@rolldown\\binding-linux-ppc64-gnu'
+85 silly reify ]
+86 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@rolldown\binding-linux-arm64-musl
+87 silly reify mark deleted [
+87 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@rolldown\\binding-linux-arm64-musl'
+87 silly reify ]
+88 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@rolldown\binding-linux-arm64-gnu
+89 silly reify mark deleted [
+89 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@rolldown\\binding-linux-arm64-gnu'
+89 silly reify ]
+90 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@rolldown\binding-linux-arm-gnueabihf
+91 silly reify mark deleted [
+91 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@rolldown\\binding-linux-arm-gnueabihf'
+91 silly reify ]
+92 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@rolldown\binding-freebsd-x64
+93 silly reify mark deleted [
+93 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@rolldown\\binding-freebsd-x64'
+93 silly reify ]
+94 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@rolldown\binding-darwin-x64
+95 silly reify mark deleted [
+95 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@rolldown\\binding-darwin-x64'
+95 silly reify ]
+96 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@rolldown\binding-darwin-arm64
+97 silly reify mark deleted [
+97 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@rolldown\\binding-darwin-arm64'
+97 silly reify ]
+98 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@rolldown\binding-android-arm64
+99 silly reify mark deleted [
+99 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@rolldown\\binding-android-arm64'
+99 silly reify ]
+100 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@rolldown\binding-android-arm-eabi
+101 silly reify mark deleted [
+101 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@rolldown\\binding-android-arm-eabi'
+101 silly reify ]
+102 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-win32-ia32-msvc
+103 silly reify mark deleted [
+103 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-win32-ia32-msvc'
+103 silly reify ]
+104 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-win32-arm64-msvc
+105 silly reify mark deleted [
+105 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-win32-arm64-msvc'
+105 silly reify ]
+106 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-openharmony-arm64
+107 silly reify mark deleted [
+107 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-openharmony-arm64'
+107 silly reify ]
+108 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-linux-x64-musl
+109 silly reify mark deleted [
+109 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-linux-x64-musl'
+109 silly reify ]
+110 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-linux-x64-gnu
+111 silly reify mark deleted [
+111 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-linux-x64-gnu'
+111 silly reify ]
+112 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-linux-s390x-gnu
+113 silly reify mark deleted [
+113 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-linux-s390x-gnu'
+113 silly reify ]
+114 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-linux-riscv64-musl
+115 silly reify mark deleted [
+115 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-linux-riscv64-musl'
+115 silly reify ]
+116 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-linux-riscv64-gnu
+117 silly reify mark deleted [
+117 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-linux-riscv64-gnu'
+117 silly reify ]
+118 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-linux-ppc64-gnu
+119 silly reify mark deleted [
+119 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-linux-ppc64-gnu'
+119 silly reify ]
+120 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-linux-arm64-musl
+121 silly reify mark deleted [
+121 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-linux-arm64-musl'
+121 silly reify ]
+122 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-linux-arm64-gnu
+123 silly reify mark deleted [
+123 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-linux-arm64-gnu'
+123 silly reify ]
+124 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-linux-arm-musleabihf
+125 silly reify mark deleted [
+125 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-linux-arm-musleabihf'
+125 silly reify ]
+126 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-linux-arm-gnueabihf
+127 silly reify mark deleted [
+127 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-linux-arm-gnueabihf'
+127 silly reify ]
+128 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-freebsd-x64
+129 silly reify mark deleted [
+129 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-freebsd-x64'
+129 silly reify ]
+130 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-darwin-x64
+131 silly reify mark deleted [
+131 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-darwin-x64'
+131 silly reify ]
+132 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-darwin-arm64
+133 silly reify mark deleted [
+133 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-darwin-arm64'
+133 silly reify ]
+134 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-android-arm64
+135 silly reify mark deleted [
+135 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-android-arm64'
+135 silly reify ]
+136 verbose reify failed optional dependency C:\Projects\razorpay-recover\frontend\node_modules\@oxlint\binding-android-arm-eabi
+137 silly reify mark deleted [
+137 silly reify   'C:\\Projects\\razorpay-recover\\frontend\\node_modules\\@oxlint\\binding-android-arm-eabi'
+137 silly reify ]
+138 http cache set-cookie-parser@https://registry.npmjs.org/set-cookie-parser/-/set-cookie-parser-2.7.2.tgz 0ms (cache hit)
+139 silly tarball no local data for set-cookie-parser@https://registry.npmjs.org/set-cookie-parser/-/set-cookie-parser-2.7.2.tgz. Extracting by manifest.
+140 http cache cookie@https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz 0ms (cache hit)
+141 http cache react-router-dom@https://registry.npmjs.org/react-router-dom/-/react-router-dom-7.18.3.tgz 0ms (cache hit)
+142 http cache react-router@https://registry.npmjs.org/react-router/-/react-router-7.18.3.tgz 0ms (cache hit)
+143 silly tarball no local data for cookie@https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz. Extracting by manifest.
+144 silly tarball no local data for react-router-dom@https://registry.npmjs.org/react-router-dom/-/react-router-dom-7.18.3.tgz. Extracting by manifest.
+145 silly tarball no local data for react-router@https://registry.npmjs.org/react-router/-/react-router-7.18.3.tgz. Extracting by manifest.
+146 http fetch GET 200 https://registry.npmjs.org/set-cookie-parser/-/set-cookie-parser-2.7.2.tgz 99ms (cache miss)
+147 http fetch GET 200 https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz 168ms (cache miss)
+148 http fetch GET 200 https://registry.npmjs.org/react-router-dom/-/react-router-dom-7.18.3.tgz 176ms (cache miss)
+149 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 327ms
+150 silly audit report {}
+151 http fetch GET 200 https://registry.npmjs.org/react-router/-/react-router-7.18.3.tgz 963ms (cache miss)
+152 silly ADD node_modules/set-cookie-parser
+153 silly ADD node_modules/cookie
+154 silly ADD node_modules/react-router
+155 silly ADD node_modules/react-router-dom
+156 silly ADD
+157 silly ADD
+158 silly ADD
+159 silly ADD
+160 silly ADD
+161 silly ADD
+162 silly ADD
+163 silly ADD
+164 silly ADD
+165 silly ADD
+166 silly ADD
+167 silly ADD
+168 silly ADD
+169 silly ADD
+170 silly ADD
+171 silly ADD
+172 silly ADD
+173 silly ADD
+174 silly ADD
+175 silly ADD
+176 silly ADD
+177 silly ADD
+178 silly ADD
+179 silly ADD
+180 silly ADD
+181 silly ADD
+182 silly ADD
+183 silly ADD
+184 silly ADD
+185 silly ADD
+186 silly ADD
+187 silly ADD
+188 silly ADD
+189 silly ADD
+190 silly ADD
+191 silly ADD
+192 silly ADD
+193 silly ADD
+194 silly ADD
+195 silly ADD
+196 silly ADD
+197 silly ADD
+198 silly ADD
+199 verbose cwd C:\Projects\razorpay-recover\frontend
+200 verbose os Windows_NT 10.0.19045
+201 verbose node v22.13.0
+202 verbose npm  v10.9.2
+203 verbose exit 0
+204 info ok

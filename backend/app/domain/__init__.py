@@ -1,0 +1,2 @@
+"""Deterministic payment-domain rules."""
+
